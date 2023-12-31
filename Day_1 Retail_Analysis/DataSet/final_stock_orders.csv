@@ -1,0 +1,131 @@
+Product_ID,Product_Name,Category,Quantity_Sold,Stock,Trend,Stock_To_Order
+4,Toy-Item 4,Clothing,31.0,18,stable,13
+10,Electro-Gadget 10,Sports & Outdoors,28.0,0,stable,28
+11,Fashion-Wear 11,Sports & Outdoors,28.0,10,stable,18
+13,Sports-Gear 13,Toys & Games,18.0,6,stable,12
+18,Sports-Gear 18,Electronics,21.0,19,stable,2
+20,Electro-Gadget 20,Home & Kitchen,27.0,0,stable,27
+23,Sports-Gear 23,Electronics,14.0,0,stable,14
+26,Fashion-Wear 26,Electronics,26.0,12,stable,14
+27,Kitchen-Tool 27,Home & Kitchen,40.0,15,stable,25
+31,Fashion-Wear 31,Toys & Games,12.0,5,stable,7
+33,Sports-Gear 33,Home & Kitchen,28.0,1,stable,27
+34,Toy-Item 34,Home & Kitchen,28.0,10,stable,18
+35,Electro-Gadget 35,Toys & Games,31.0,6,stable,25
+36,Fashion-Wear 36,Sports & Outdoors,15.0,6,decreasing,7
+42,Kitchen-Tool 42,Toys & Games,20.0,2,stable,18
+45,Electro-Gadget 45,Sports & Outdoors,18.0,9,stable,9
+47,Kitchen-Tool 47,Home & Kitchen,24.0,5,stable,19
+57,Kitchen-Tool 57,Sports & Outdoors,20.0,18,stable,2
+59,Toy-Item 59,Sports & Outdoors,50.0,13,growing,44
+68,Sports-Gear 68,Sports & Outdoors,11.0,5,stable,6
+69,Toy-Item 69,Electronics,26.0,15,stable,11
+78,Sports-Gear 78,Toys & Games,35.0,10,stable,25
+79,Toy-Item 79,Toys & Games,18.0,12,stable,6
+84,Toy-Item 84,Toys & Games,31.0,22,stable,9
+85,Electro-Gadget 85,Toys & Games,51.0,19,stable,32
+86,Fashion-Wear 86,Sports & Outdoors,10.0,5,stable,5
+89,Toy-Item 89,Toys & Games,9.0,5,stable,4
+92,Kitchen-Tool 92,Electronics,38.0,26,stable,12
+95,Electro-Gadget 95,Sports & Outdoors,18.0,7,stable,11
+99,Toy-Item 99,Sports & Outdoors,12.0,0,stable,12
+103,Sports-Gear 103,Clothing,39.0,3,growing,41
+105,Electro-Gadget 105,Electronics,22.0,0,stable,22
+119,Toy-Item 119,Sports & Outdoors,35.0,33,stable,2
+120,Electro-Gadget 120,Sports & Outdoors,8.0,4,stable,4
+121,Fashion-Wear 121,Electronics,20.0,16,stable,4
+126,Fashion-Wear 126,Toys & Games,22.0,7,stable,15
+127,Kitchen-Tool 127,Home & Kitchen,26.0,22,stable,4
+133,Sports-Gear 133,Electronics,32.0,11,stable,21
+136,Fashion-Wear 136,Sports & Outdoors,31.0,30,stable,1
+147,Kitchen-Tool 147,Home & Kitchen,22.0,13,stable,9
+149,Toy-Item 149,Clothing,26.0,8,stable,18
+153,Sports-Gear 153,Home & Kitchen,5.0,1,stable,4
+154,Toy-Item 154,Toys & Games,30.0,29,stable,1
+155,Electro-Gadget 155,Electronics,14.0,5,stable,9
+158,Sports-Gear 158,Toys & Games,39.0,22,stable,17
+160,Electro-Gadget 160,Toys & Games,15.0,0,stable,15
+161,Fashion-Wear 161,Sports & Outdoors,23.0,4,stable,19
+162,Kitchen-Tool 162,Clothing,32.0,20,stable,12
+175,Electro-Gadget 175,Clothing,20.0,0,stable,20
+181,Fashion-Wear 181,Home & Kitchen,21.0,16,stable,5
+186,Fashion-Wear 186,Clothing,44.0,23,stable,21
+188,Sports-Gear 188,Electronics,8.0,0,stable,8
+190,Electro-Gadget 190,Home & Kitchen,41.0,37,stable,4
+195,Electro-Gadget 195,Sports & Outdoors,15.0,6,stable,9
+199,Toy-Item 199,Toys & Games,21.0,17,stable,4
+204,Toy-Item 204,Home & Kitchen,48.0,22,stable,26
+205,Electro-Gadget 205,Electronics,23.0,11,stable,12
+206,Fashion-Wear 206,Clothing,15.0,11,stable,4
+208,Sports-Gear 208,Sports & Outdoors,10.0,7,stable,3
+211,Fashion-Wear 211,Clothing,23.0,0,stable,23
+217,Kitchen-Tool 217,Sports & Outdoors,26.0,2,stable,24
+218,Sports-Gear 218,Home & Kitchen,35.0,8,stable,27
+219,Toy-Item 219,Sports & Outdoors,25.0,10,stable,15
+220,Electro-Gadget 220,Electronics,9.0,5,stable,4
+226,Fashion-Wear 226,Clothing,13.0,5,stable,8
+227,Kitchen-Tool 227,Toys & Games,28.0,5,stable,23
+234,Toy-Item 234,Toys & Games,23.0,9,stable,14
+235,Electro-Gadget 235,Clothing,22.0,4,stable,18
+237,Kitchen-Tool 237,Sports & Outdoors,38.0,24,stable,14
+239,Toy-Item 239,Toys & Games,11.0,2,stable,9
+241,Fashion-Wear 241,Clothing,30.0,3,stable,27
+243,Sports-Gear 243,Toys & Games,24.0,11,stable,13
+245,Electro-Gadget 245,Electronics,17.0,0,stable,17
+250,Electro-Gadget 250,Sports & Outdoors,47.0,21,stable,26
+251,Fashion-Wear 251,Toys & Games,29.0,20,stable,9
+260,Electro-Gadget 260,Electronics,13.0,11,stable,2
+263,Sports-Gear 263,Toys & Games,21.0,19,stable,2
+269,Toy-Item 269,Toys & Games,42.0,45,growing,3
+270,Electro-Gadget 270,Clothing,12.0,6,stable,6
+276,Fashion-Wear 276,Toys & Games,26.0,23,stable,3
+278,Sports-Gear 278,Home & Kitchen,41.0,3,stable,38
+281,Fashion-Wear 281,Home & Kitchen,32.0,0,stable,32
+282,Kitchen-Tool 282,Clothing,22.0,2,stable,20
+283,Sports-Gear 283,Sports & Outdoors,26.0,5,stable,21
+289,Toy-Item 289,Toys & Games,17.0,7,stable,10
+294,Toy-Item 294,Sports & Outdoors,41.0,11,stable,30
+303,Sports-Gear 303,Electronics,19.0,11,stable,8
+307,Kitchen-Tool 307,Sports & Outdoors,11.0,3,stable,8
+309,Toy-Item 309,Home & Kitchen,17.0,7,stable,10
+312,Kitchen-Tool 312,Electronics,18.0,11,stable,7
+314,Toy-Item 314,Clothing,25.0,11,stable,14
+315,Electro-Gadget 315,Home & Kitchen,21.0,16,stable,5
+319,Toy-Item 319,Home & Kitchen,19.0,1,stable,18
+320,Electro-Gadget 320,Sports & Outdoors,45.0,18,stable,27
+324,Toy-Item 324,Clothing,17.0,0,stable,17
+327,Kitchen-Tool 327,Sports & Outdoors,26.0,8,stable,18
+329,Toy-Item 329,Sports & Outdoors,16.0,11,stable,5
+334,Toy-Item 334,Sports & Outdoors,24.0,15,stable,9
+335,Electro-Gadget 335,Home & Kitchen,4.0,0,stable,4
+343,Sports-Gear 343,Electronics,59.0,0,stable,59
+344,Toy-Item 344,Clothing,15.0,11,stable,4
+346,Fashion-Wear 346,Sports & Outdoors,19.0,11,stable,8
+349,Toy-Item 349,Sports & Outdoors,13.0,1,stable,12
+351,Fashion-Wear 351,Sports & Outdoors,20.0,1,stable,19
+355,Electro-Gadget 355,Home & Kitchen,40.0,0,stable,40
+356,Fashion-Wear 356,Clothing,18.0,0,stable,18
+361,Fashion-Wear 361,Sports & Outdoors,25.0,23,stable,2
+369,Toy-Item 369,Clothing,41.0,15,stable,26
+373,Sports-Gear 373,Clothing,16.0,10,stable,6
+381,Fashion-Wear 381,Toys & Games,23.0,1,stable,22
+388,Sports-Gear 388,Toys & Games,32.0,15,stable,17
+413,Sports-Gear 413,Electronics,34.0,0,stable,34
+415,Electro-Gadget 415,Clothing,12.0,4,stable,8
+427,Kitchen-Tool 427,Clothing,19.0,17,stable,2
+431,Fashion-Wear 431,Home & Kitchen,25.0,6,stable,19
+436,Fashion-Wear 436,Clothing,42.0,40,stable,2
+449,Toy-Item 449,Sports & Outdoors,40.0,17,stable,23
+450,Electro-Gadget 450,Clothing,11.0,3,stable,8
+459,Toy-Item 459,Toys & Games,21.0,7,stable,14
+464,Toy-Item 464,Sports & Outdoors,32.0,17,stable,15
+466,Fashion-Wear 466,Toys & Games,31.0,21,stable,10
+469,Toy-Item 469,Clothing,32.0,15,stable,17
+470,Electro-Gadget 470,Electronics,28.0,17,growing,15
+471,Fashion-Wear 471,Electronics,13.0,10,stable,3
+473,Sports-Gear 473,Home & Kitchen,30.0,3,stable,27
+480,Electro-Gadget 480,Toys & Games,19.0,4,stable,15
+483,Sports-Gear 483,Home & Kitchen,8.0,6,stable,2
+487,Kitchen-Tool 487,Electronics,20.0,0,stable,20
+491,Fashion-Wear 491,Toys & Games,17.0,0,stable,17
+493,Sports-Gear 493,Sports & Outdoors,26.0,8,stable,18
