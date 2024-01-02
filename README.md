@@ -1,21 +1,21 @@
 # Data Analysis Daily
 
-## Introduction
+### Introduction
 
 Welcome to my GitHub repository dedicated to Data Analysis Projects! This is a space where I engage in daily exploration 
 and application of data analysis concepts. Each project here is a step in my journey of mastering data analytics, 
 showcasing my skills and continuous learning.
 
-## Objective
+### Objective
 
 The aim is to engage in different data analysis concepts with the goal of daily learning and growth, and to gain proficiency in all concepts.
 
 
-## Projects Overview
+### Projects Overview
 
 In this section, you'll find a brief overview of each project, outlining its purpose and the key skills or tools utilized. For more detailed information, please visit the respective project folders.
 
-- **[Challenge_1 Retail Analysis]** -
+**Challenge_1 Retail Analysis** 
 
 I used a randomly generated dataset with the aim to get hands-on exposure to the data analysis workflow. 
 This project involved cleaning and analyzing retail data using Python (**Pandas, NumPy, SciPy, SQLAlchemy**)
@@ -24,7 +24,7 @@ SQL querying for advanced analysis, and statistical methods like **linear regres
 
 
 
-## Technologies and Tools
+### Technologies and Tools
 
 Throughout these projects, I utilize a range of technologies and tools, such as:
 
@@ -40,7 +40,7 @@ Throughout these projects, I utilize a range of technologies and tools, such as:
   
 
 
-## Connect with Me
+### Connect with Me
 
 Feel free to reach out for collaboration, feedback, or any inquiries:
 
