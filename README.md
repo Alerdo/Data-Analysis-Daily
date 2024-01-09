@@ -14,8 +14,8 @@ SQL querying for advanced analysis, and statistical methods like **linear regres
 
 **Challenge_2 Correlation Python** 🔍📉🔢
 My aim in this project was to learn and practice  correlation. I cleaned missing data, duplicates, data types
-and used scatterplot to visualize correlation between numerical data also created a heatmap for a correlation
-matrix.I further studied correlation significance by learning how to use the t-test, specifically understanding t-values and p-values.
+and used **scatterplots** to visualize correlation between numerical data also created a **heatmap** for a correlation
+matrix. I further studied **correlation significance** by learning how to use the **t-test**, specifically understanding **t-values** and **p-values**.
 
 
 ### Technologies and Tools
