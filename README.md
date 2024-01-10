@@ -15,7 +15,7 @@ My aim in this project was to learn and practice  correlation. I cleaned missing
 and used **scatterplots** to visualize correlation between numerical data also created a **heatmap** for a correlation
 matrix. I further studied correlation significance by learning how to use the **t-test**, specifically understanding **t-values** and **p-values**.
 
-**Challenge_3 Road Accidents PowerBI** 🔍📉🔢
+**Challenge_3 Road Accidents PowerBI** 📚🗂️🧮 
 
 The aim of this project was to gain practical knowledge of **Power BI**. Part of my work included data cleansing,
 such as replacing faulty values, etc. I also created a **Calendar** Table and connected it to the accident records with 
