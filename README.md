@@ -10,24 +10,31 @@ and SQL, focusing on inventory management and sales trend analysis. Skills devel
 SQL querying for advanced analysis, and statistical methods like **linear regression** for interpreting sales trends and optimizing inventory.
 
 **Challenge_2 Correlation Python** 🔍📉🔢
+
 My aim in this project was to learn and practice  correlation. I cleaned missing data, duplicates, data types
 and used **scatterplots** to visualize correlation between numerical data also created a **heatmap** for a correlation
-matrix. I further studied **correlation significance** by learning how to use the **t-test**, specifically understanding **t-values** and **p-values**.
+matrix. I further studied correlation significance by learning how to use the **t-test**, specifically understanding **t-values** and **p-values**.
+
+**Challenge_3 Road Accidents PowerBI** 🔍📉🔢
+
+The aim of this project was to gain practical knowledge of **Power BI**. Part of my work included data cleansing,
+such as replacing faulty values, etc. I also created a **Calendar** Table and connected it to the accident records with 
+a foreign key, which helped in creating dynamic data visualizations. I really enjoyed the whole process of creating calculations through **measures** and using them to create interactive dashboards.
 
 
 ### Technologies and Tools
 
 Throughout these projects, I utilize a range of technologies and tools, such as:
-
+- PowerBI, Jupyter Notebook
 - Python
+- SQL
 - Pandas
 - NumPy
 - Matplotlib
 - Seaborn
 - Sqlalchemy
 - SciPy 
-- SQL
-- Jupyter Notebooks
+
   
 
 
