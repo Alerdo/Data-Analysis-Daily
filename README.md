@@ -1,9 +1,6 @@
 # Data Analysis Daily 
 
-Welcome to my GitHub repository dedicated to Data Analysis Projects! This is a space where I engage in daily exploration 
-and application of data analysis concepts.
-*The aim is to engage in different data analysis concepts with the goal of daily learning and growth, and to gain proficiency in all concepts.*
-Below you'll find a brief overview of each project, outlining its purpose and the key skills or tools utilized. For more detailed information, please visit the respective project folders.
+Welcome to my GitHub repository dedicated to Data Analysis Projects! This is a space where I explore and apply data analysis concepts daily, aiming for continual learning and mastery. Below is a quick overview of each project, highlighting its purpose and the main skills or tools used. For in-depth details, please check the project folders.
 
 **Challenge_1 Retail Analysis** 📊💻📈
 
@@ -13,24 +10,31 @@ and SQL, focusing on inventory management and sales trend analysis. Skills devel
 SQL querying for advanced analysis, and statistical methods like **linear regression** for interpreting sales trends and optimizing inventory.
 
 **Challenge_2 Correlation Python** 🔍📉🔢
+
 My aim in this project was to learn and practice  correlation. I cleaned missing data, duplicates, data types
 and used **scatterplots** to visualize correlation between numerical data also created a **heatmap** for a correlation
-matrix. I further studied **correlation significance** by learning how to use the **t-test**, specifically understanding **t-values** and **p-values**.
+matrix. I further studied correlation significance by learning how to use the **t-test**, specifically understanding **t-values** and **p-values**.
+
+**Challenge_3 Road Accidents PowerBI** 📚🗂️🧮 
+
+The aim of this project was to gain practical knowledge of **Power BI**. Part of my work included data cleansing,
+such as replacing faulty values, etc. I also created a **Calendar** Table and connected it to the accident records with 
+a foreign key, which helped in creating dynamic data visualizations. I really enjoyed the whole process of creating calculations through **measures** and using them to create interactive dashboards.
 
 
 ### Technologies and Tools
 
 Throughout these projects, I utilize a range of technologies and tools, such as:
-
+- PowerBI, Jupyter Notebook
 - Python
+- SQL
 - Pandas
 - NumPy
 - Matplotlib
 - Seaborn
 - Sqlalchemy
 - SciPy 
-- SQL
-- Jupyter Notebooks
+
   
 
 
