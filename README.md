@@ -21,6 +21,15 @@ The aim of this project was to gain practical knowledge of **Power BI**. Part of
 such as replacing faulty values, etc. I also created a **Calendar** Table and connected it to the accident records with 
 a foreign key, which helped in creating dynamic data visualizations. I really enjoyed the whole process of creating calculations through **measures** and using them to create interactive dashboards.
 
+**Challenge_4 Global Sales PowerBI** 📈🔍📉
+
+Using a dataset from Kaggle, I conducted a Super-Store data analysis, aiming to adhere to best practices. The process began with an initial data cleanup, followed by a comprehensive **Exploratory Data Analysis** (EDA) to identify patterns, correlations, and anomalies, performed on **Jupyter Notebook**. After saving the cleaned data locally, I moved to **Power BI**, where I performed different **DAX** calculations and **measures** to calculate various KPIs as per the stakeholders' requirements. The project was finalized with the creation of an interactive dashboard.
+
+
+
+
+
+
 
 ### Technologies and Tools
 
