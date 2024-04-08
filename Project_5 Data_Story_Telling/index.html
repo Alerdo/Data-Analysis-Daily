@@ -18,12 +18,257 @@
       stroke: #007bff; /* Blue stroke color */
       stroke-width: 1; /* Adjust stroke width as needed */
     }
+    
+    .tooltip {
+  position: absolute;
+  visibility: hidden;
+  background-color: white;
+  border: 1px solid #333; /* Darker border for contrast */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* subtle shadow for depth */
+  font-family: 'Arial', sans-serif;
+  font-size: 0.9rem; /* Responsive font size */
+  color: #333; /* Dark text for readability */
+  pointer-events: none; /* Tooltip shouldn't interfere with other mouse events */
+  z-index: 1000; /* Make sure the tooltip is on top of other elements */
+  text-align: left; }
+  
+  #project-header {
+  background-color: #db0101; /* Red background */
+  color: white; /* White text for contrast */
+  padding: 10px 10px 5px; /* Padding around the content */
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Includes padding in the height calculation */
+  /* position: fixed;  */
+  top: 0; /* Aligns to the top of the page */
+  left: 0; /* Aligns to the left of the page */
+  z-index: 1000; /* Ensures the header is above other content */
+}
+
+#project-header h1, #project-header p {
+  margin-top: 0; /* Removes the default top margin */
+}
+#project-header p {
+  font-size: 20px;
+}
+
+#project-header hr {
+  border-color: white; /* White horizontal rule for contrast */
+  margin: 10px 0; /* Spacing before and after the rule */
+}
+
+.list-container {
+  display: flex; /* Use flexbox to create a row */
+  justify-content: space-between; /* Distribute space between the lists */
+}
+
+.list-section {
+  flex: 1; /* Each list section will take up equal space */
+  margin-right: 10px; /* Add some margin between the list sections */
+}
+
+.list-section:last-child {
+  margin-right: 0; /* No margin on the right side of the last list section */
+}
+
+#project-header ul {
+  padding-left: 20px; /* Indent for list items */
+  list-style-type: none; /* Remove default list styling */
+}
+
+#project-header li {
+  line-height: 1.6; /* Spacing between list items */
+}
+
+#election-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+  padding: 5px;
+  color: white;
+
+}
+#election-results h2 {
+  padding: 0;
+}
+
+#parties {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  color: white;
+  width: 100%;
+}
+
+.candidate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  
+
+.percentage {
+  font-size: 18px;
+}
+.candidate .info {
+  text-align: center;
+  margin: 0 8px;
+}
+
+.candidate .votes {
+  text-align: center;
+  margin: 0 8px;
+}
+
+#full-bar {
+  width: 45px;
+  height: 100px;
+  background-color: grey;
+  padding: 0;
+  margin: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bar {
+  width: 45px; /* Or dynamic based on vote percentage */
+  height: 100px; /* Fixed height, or dynamic based on vote percentage */
+  background-color: red; /* Or the color of the political party */
+  margin-top: auto;
+  padding: 0;
+  z-index: 999;
+}
+
+img {
+  height: 100px; /* Fixed height for images */
+  border-radius: 50%; /* Circular images */
+}
+
+.chart-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+  .charts-row {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+
+
+#gdpChart ,#inflationChart ,#exchangeRateChart {
+  /* border: 1px solid blue; */
+}
+
+.gdpTooltip {
+            position: absolute;
+            text-align: center;
+            width: auto;
+            height: auto;
+            padding: 2px;
+            font: 12px sans-serif;
+            background: lightsteelblue;
+            border: 0px;
+            border-radius: 8px;
+            pointer-events: none;
+            opacity: 0;
+        }
+
   </style>
 </head>
 <body>
 
 <!-- Container for the map -->
-<div id="map"></div>
+<header id="project-header">
+  <h1>Project Objective</h1>
+  <hr>
+  <p>Understand the differences in voting patterns between the 2023 Turkish presidential elections and the 2024 local elections. Analyze factors that led to Erdogan's contrasting outcomes in these elections.</p>
+</header>
+
+
+<div id="election-results">
+  <h2>2023 Presidential Elections Result</h2>
+  <div id="parties" >
+  <div class="candidate">
+    <img src="images/erdogan.webp" alt="Recep Tayyip Erdogan">
+    <div class="info">      
+      <p>AK Party</p>
+      <p>Recep Tayyip Erdogan</p>
+      <p>People's Alliance</p>
+    </div>
+    <div class="votes">
+      <p class="percentage">52.18%</p>
+      <p class="number">Votes: 27,834,692</p>
+    </div>
+    <div id="full-bar"><div class="bar" id="erdogan-bar"></div> </div>
+  </div>
+
+  <div class="candidate">
+    <div id="full-bar"><div class="bar" id="kilicdaroglu-bar"></div> </div>
+
+    <div class="votes">
+      <p class="percentage">47.82%</p>
+      <p class="number">Votes: 25,504,552</p>
+    </div>
+    <div class="info">
+      <p>CHP Party</p>
+      <p>Kemal Kilicdaroglu</p>
+      <p>Nation Alliance</p>
+    </div>
+    <img src="/images/kemal.webp" alt="Kemal Kilicdaroglu">
+  </div>
+  </div>
+</div>
+
+
+<div id="map">
+  <div id="tooltip" style="position: absolute; visibility: hidden; background-color: white; border: 1px solid black; padding: 10px; border-radius: 5px;"></div>
+
+</div>
+
+<div class="chart-container">
+  
+  
+  <div id="inflationChart"></div>
+  <div id="exchangeRateChart"></div>
+  <div id="gdpChart"></div>
+
+</div>
+
+
+
+<div id="map2"></div>
+
+<!-- 
+<div>
+  <div class="list-container">
+    <div class="list-section">
+      <h2>Stakeholders Requests:</h2>
+      <ul>
+        <li>How did voting patterns change between the two elections?</li>
+        <li>Were there specific regions where the shift in support was more pronounced?</li>
+        <li>Factors that led to the result</li>
+      </ul>
+    </div>
+
+    <div class="list-section">
+      <h2>Technology Stack:</h2>
+      <ul>
+        <li>JavaScript(D3.js), HTML</li>
+        <li>GIT</li>
+        <li>Jupyter Notebook</li>
+        <li>Python (Pandas & Numpy for data cleansing & analysis)</li>
+      </ul>
+    </div>
+  </div>
+</div> -->
 
 <!-- D3 library -->
 <script src="https://d3js.org/d3.v7.min.js"></script>
