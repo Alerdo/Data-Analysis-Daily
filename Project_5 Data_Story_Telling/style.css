@@ -1,0 +1,450 @@
+
+    #map {
+      width: 100%;
+      height: 300px; /*  height   */
+      margin: auto;
+      /* border: 1px solid blue; */
+    }
+
+    
+    #map2 {
+      width: 100%;
+      height: 300px; /*  height   */
+      margin: auto;
+      /* border: 1px solid blue; */
+    }
+
+
+    header {
+      margin-bottom: 20px;
+    }
+    
+    .list-container {
+  display: flex;
+  background: #E42548;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0);
+}
+
+
+
+    #project-header {
+      background: #ffffff; /* Red background */
+  color: rgb(0, 0, 0); /* White text for contrast */
+  padding: 10px 10px 5px; /* Padding around the content */
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Includes padding in the height calculation */
+  /* position: fixed;  */
+  top: 0; /* Aligns to the top of the page */
+  left: 0; /* Aligns to the left of the page */
+  z-index: 1000; /* Ensures the header is above other content */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#project-header h1 {
+  min-width: fit-content;
+  margin-right: 5px;
+ 
+}
+
+#project-header h1, #project-header p {
+  margin-top: 0; /* Removes the default top margin */
+  padding: 0;
+}
+#project-header p {
+  font-size: 20px;
+}
+
+#project-header hr {
+  border-color: white; /* White horizontal rule for contrast */
+  margin: 10px 0; /* Spacing before and after the rule */
+}
+
+
+#election-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+  padding-bottom: 5px;
+  color: white;
+
+}
+#election-results h2 {
+  padding: 0;
+  margin: 7px;
+  font-size: 18px;
+  display: none;
+}
+
+#parties {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  color: white;
+  width: 100%;
+}
+
+.candidate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding-top: 7px;
+  }
+  
+
+.percentage {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+.candidate .info {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.info p {
+  margin: 2px;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  display: inline-block; /* Align p tags inline */
+
+}
+
+
+.bar:hover {
+  background-color: #ff4d4d; /* Brighter shade for hover on AK party bar */
+}
+
+#kilicdaroglu-bar:hover {
+  background-color: #ff6666; /* Brighter shade for hover on CHP party bar */
+}
+
+
+.number  {
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+}
+
+.candidate .votes {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+#full-bar {
+  width: 45px;
+  height: 80px;
+  background-color: grey;
+  padding: 0;
+  margin: 0px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bar {
+  width: 45px; /* Or dynamic based on vote percentage */
+  height: 80px; /* Fixed height, or dynamic based on vote percentage */
+  background-color: red; /* Or the color of the political party */
+  margin-top: auto;
+  padding: 0;
+  z-index: 999;
+}
+
+img {
+  height: 80px; /* Fixed height for images */
+  border-radius: 50%; /* Circular images */
+}
+
+    .map-wraper {
+      display: flex;
+      justify-content: space-evenly;
+      /* border: 1px solid rgb(0, 0, 0); */
+      margin: 15px 0px;
+      padding: 10px 0px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.09);
+    }
+
+    .left-content {
+      /* border: 1px solid orange; */
+      min-width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .right-content {
+      max-width: 47%;
+      /* border: 1px solid green; */
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .analysis {
+      display: flex;
+      align-items: center;
+    }
+    .analysis ul {
+     
+      font-size: 17px;
+    }
+
+    /*  city boundaries */
+  .city-boundary {
+    fill: none;
+    stroke: #007bff; /* Blue stroke color */
+    stroke-width: 1; /* Adjust stroke width as needed */
+  }
+    
+    .tooltip {
+  position: absolute;
+  visibility: hidden;
+  background-color: white;
+  border: 1px solid #333; /* Darker border for contrast */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* subtle shadow for depth */
+  font-family: 'Arial', sans-serif;
+  font-size: 0.9rem; /* Responsive font size */
+  color: #333; /* Dark text for readability */
+  pointer-events: none; /* Tooltip shouldn't interfere with other mouse events */
+  z-index: 1000; /* Make sure the tooltip is on top of other elements */
+  text-align: left; }
+  
+
+
+  #indicators h2 {
+    text-align: center;
+  }
+
+.chart-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+
+.charts-row {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+
+
+#gdpChart ,#inflationChart ,#exchangeRateChart {
+  /* border: 1px solid blue; */
+}
+
+.gdpTooltip {
+            position: absolute;
+            text-align: center;
+            width: auto;
+            height: auto;
+            padding: 2px;
+            font: 12px sans-serif;
+            background: lightsteelblue;
+            border: 0px;
+            border-radius: 8px;
+            pointer-events: none;
+            opacity: 0;
+        }
+
+
+        .legend {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Spacing between items */
+  margin-bottom: 20px; /* Spacing from the bottom */
+}
+
+.legend div {
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+
+.legend .color-box {
+  width: 20px;
+  height: 10px;
+  margin-right: 5px; /* Spacing between the color box and the text */
+  border: 1px solid #000; /* Optional border around the color boxes */
+  border-radius: 10%;
+}
+
+/* Colors for each party */
+#CHP { background-color: #E42538; }
+#MHP { background-color: #E6D9B9; } /* Green, update if a different shade is needed */
+#AK { background-color: #ED9600; }
+#DEM { background-color: #007FFF; }
+#YR { background-color: #808080; } /* Placeholder color, update as needed */
+
+.cities-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.city {
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 10px 5px 0px;
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.1), /* larger shadow for depth */
+    0 6px 6px rgba(0, 0, 0, 0.1), /* medium shadow for soft edge */
+    0 0 8px rgba(0, 0, 0, 0.2), /* smaller shadow for crisp edge */
+    0 2px 4px rgba(0, 0, 0, 0.2); /* smallest shadow for detailed edge */
+  width: 30%; /* Adjust based on your design requirements */
+  transition: box-shadow 0.3s ease;
+}
+
+.city:hover {
+  box-shadow:
+    0 15px 30px rgba(0, 0, 0, 0.15), /* larger shadow for depth when hovered */
+    0 10px 10px rgba(0, 0, 0, 0.1), /* medium shadow for soft edge when hovered */
+    0 0 12px rgba(0, 0, 0, 0.25), /* smaller shadow for crisp edge when hovered */
+    0 4px 6px rgba(0, 0, 0, 0.3); /* smallest shadow for detailed edge when hovered */
+}
+
+
+.city h2 {
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+.candidate-local {
+  background-color: #e0e0e0; /* Light gray background */
+  color: #000; /* Black text color */
+  padding: 10px 15px; /* Add padding for better readability */
+  margin-bottom: 10px; /* Add margin to separate each candidate */
+  border-radius: 5px; /* Add rounded corners for a nicer appearance */
+  position: relative;
+  border: 1px solid #ccc; /* Slight border for depth */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), /* Drop shadow for depth */
+              0 1px 3px rgba(0, 0, 0, 0.2),
+              inset 0 1px 2px rgba(255, 255, 255, 0.1), /* Inner shadow for a subtle inset effect */
+              inset 0 -1px 2px rgba(0, 0, 0, 0.1); /* Inner shadow for a subtle inset effect */
+  
+  transition: transform 0.1s ease, box-shadow 0.1s ease; /* Smooth transition for interactive effect */
+}
+
+.candidate-local:hover, .candidate-local:focus {
+  transform: translateY(-2px); /* Move up slightly when hovered/focused for a "lifted" effect */
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1), /* Enhanced drop shadow for lifted effect */
+              0 2px 3px rgba(0, 0, 0, 0.2),
+              inset 0 1px 2px rgba(255, 255, 255, 0.1), /* Inner shadow for a subtle inset effect */
+              inset 0 -1px 2px rgba(0, 0, 0, 0.1); /* Inner shadow for a subtle inset effect */
+}
+
+
+
+
+
+.candidate-local.chp {
+  background-color: rgb(255, 71, 66);
+}
+
+.candidate-local.akp {
+  background-color: rgb(237, 150, 0);
+}
+
+
+#metropolitans {
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0);
+  padding: 15px 0px;
+
+
+}
+
+
+.results-container {
+  /* display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center; */
+  margin-bottom: 20px; /* Adjust as needed */
+  
+}
+.results-container h2 {
+  text-align: center;
+}
+
+
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px; /* Adjust as needed */
+}
+
+.legend {
+  display: flex;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Space between legend items */
+}
+
+.color-box {
+  width: 20px; /* Size of the color box */
+  height: 20px;
+  border-radius: 3px; /* Optional: if you want rounded corners */
+  margin-right: 5px; /* Space between color box and text */
+}
+
+.color-box.chp {
+  background-color: rgb(255, 71, 66);
+}
+
+.color-box.akp {
+  background-color: rgb(237, 150, 0);
+}
+
+
+
+#project-description {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+#project-description h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#project-description p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+#project-description ul {
+  color: #555;
+  font-size: 16px;
+}
+
+#project-description li {
+  margin-bottom: 5px;
+}

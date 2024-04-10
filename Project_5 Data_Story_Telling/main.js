@@ -1,34 +1,90 @@
-
-// Election data with vote percentages
+// --------2023 Candidate Result----- 
 var data = {
     'erdogan': { 'votes': 27834692, 'percentage': 52.18, 'party': 'AK' },
     'kilicdaroglu': { 'votes': 25504552, 'percentage': 47.82, 'party': 'CHP' }
   };
   
-  // Party colors
+  // Original party colors
   let partyColors = {
     'AK': '#ED9600',
     'CHP': '#E42538',
     'Default': '#BDC3C7'
   };
   
-  // Seting the height of the bars based on the percentage and assign party colors
+  // Brighter hover colors
+  let hoverColors = {
+    'AK': '#FFB347',    // Brighter version of '#ED9600'
+    'CHP': '#FF4742',   // Brighter anversion of '#E42538'
+    'Default': '#D3D3D3' //  brighter version of '#BDC3C7'
+  };
+  
+  // Setting the height of the bars based on the percentage and assigning party colors
   d3.select("#erdogan-bar")
-    .style("height", data['erdogan'].percentage + "px")
+    .style("height", data['erdogan'].percentage + "%") // Changed to percentage for a better visual representation
     .style("background-color", partyColors['AK']);
   
   d3.select("#kilicdaroglu-bar")
-    .style("height", data['kilicdaroglu'].percentage + "px")
+    .style("height", data['kilicdaroglu'].percentage + "%") // Changed to percentage for a better visual representation
     .style("background-color", partyColors['CHP']);
   
+  // D3 hover effect for Erdogan bar
+  d3.select("#erdogan-bar")
+    .on("mouseover", function() {
+      d3.select(this).style("background-color", hoverColors['AK']); // Brighter color on hover
+    })
+    .on("mouseout", function() {
+      d3.select(this).style("background-color", partyColors['AK']); // Original color
+    });
+  
+  // D3 hover effect for Kilicdaroglu bar
+  d3.select("#kilicdaroglu-bar")
+    .on("mouseover", function() {
+      d3.select(this).style("background-color", hoverColors['CHP']); // Brighter color on hover
+    })
+    .on("mouseout", function() {
+      d3.select(this).style("background-color", partyColors['CHP']); // Original color
+    });
 
+
+
+    ///////// ---------------2024---Candidate result------------
+    var data1 = {
+        'erdogan': { 'votes': 16339771, 'percentage': 35.48, 'party': 'AK' },
+        'ozgur': { 'votes': 17391548, 'percentage': 37.76, 'party': 'CHP' }
+    };
+    
+
+
+    d3.select("#erdogan-bar1")
+    .style("height", data1['erdogan'].percentage + "%") // Changed to percentage for a better visual representation
+    .style("background-color", partyColors['AK']);
+  
+  d3.select("#ozgur-bar")
+    .style("height", data1['ozgur'].percentage + "%") // Changed to percentage for a better visual representation
+    .style("background-color", partyColors['CHP']);
+  
+  // D3 hover effect for Erdogan bar
+  d3.select("#erdogan-bar1")
+    .on("mouseover", function() {
+      d3.select(this).style("background-color", hoverColors['AK']); // Brighter color on hover
+    })
+    .on("mouseout", function() {
+      d3.select(this).style("background-color", partyColors['AK']); // Original color
+    });
+  
+  // D3 hover effect for Kilicdaroglu bar
+  d3.select("#ozgur-bar")
+    .on("mouseover", function() {
+      d3.select(this).style("background-color", hoverColors['CHP']); // Brighter color on hover
+    })
+    .on("mouseout", function() {
+      d3.select(this).style("background-color", partyColors['CHP']); // Original color
+    });
+  
+
+    /// ------------Map---2023-----------------------------
 
 let svg;
-let hoverColors = {
-    'AK': '#FFB347',    // Brighter and more vivid version of '#E42538'
-    'CHP': '#FF4742',// Brighter and more vivid version of '#ED9600'
-    'Default': '#D3D3D3' // Lighter and slightly brighter version of '#BDC3C7'
-}
 let tooltip = d3.select("body").append("div")
     .attr("class", "tooltip")
     .style("position", "absolute")
@@ -76,6 +132,14 @@ d3.json("http://localhost:8000/JSON_Data/merged_data.geojson").then(function(dat
 //------------------
 
 
+// svg.append("text")
+//    .attr("x", width/2)
+//    .attr("y", 25) // Adjusted to position closer to the top
+//    .attr("text-anchor", "middle")
+//    .attr("font-size", "16px")
+//    .text("2023 Presidential Elections");
+
+
 svg.selectAll(".city-boundary")
     .data(data.features)
     .enter().append("path")
@@ -100,7 +164,7 @@ svg.selectAll(".city-boundary")
         let content = `<strong>${properties.name}</strong><br/>`;
         parties.forEach(party => {
             if (properties[party]) {
-                content += `${party} Party: ${(properties[party] * 100).toFixed(2)}%<br/>`;
+                content += `${party} Alliance: ${(properties[party] * 100).toFixed(2)}%<br/>`;
             }
         });
 
@@ -117,8 +181,6 @@ svg.selectAll(".city-boundary")
         tooltip.style("visibility", "hidden");
     });
 
-
-//------------------
 
 
     svg.selectAll(".city-name")
@@ -145,7 +207,7 @@ svg.selectAll(".city-boundary")
 
 
 
-//-------------------------------------
+//--------------Charts with economy key indicators----------------------
 
 
 // Dimensions and margins for the graph
@@ -227,7 +289,7 @@ svg1.selectAll(".tick text") // Adjust the class name if necessary
       .attr("y2", chartHeight)
       .attr("opacity", 0); // Initially hidden
 
-  // Create and append div for the GDP tooltip
+  //  div for the GDP tooltip
   const gdpTooltip = d3.select("body").append("div")
       .attr("class", "gdpTooltip")
       .style("opacity", 0)
@@ -236,19 +298,19 @@ svg1.selectAll(".tick text") // Adjust the class name if necessary
       .style("border", "1px solid #000")
       .style("padding", "5px");
 
-  // Append mouseover event listener for svg1
+  // Appending mouseover event listener for svg1
   svg1.append("rect")
     .attr("class", "overlay")
     .attr("width", chartWidth)
     .attr("height", chartHeight)
-    .style("opacity", 0) // Set to transparent to capture mouse events
+    .style("opacity", 0) //
     .on("mouseover", function() {
-      hoverLine.attr("opacity", 1); // Show the vertical line on mouseover
-      gdpTooltip.style("opacity", 1); // Show the tooltip on mouseover
+      hoverLine.attr("opacity", 1); 
+      gdpTooltip.style("opacity", 1); 
     })
     .on("mouseout", function() {
-      hoverLine.attr("opacity", 0); // Hide the vertical line on mouseout
-      gdpTooltip.style("opacity", 0); // Hide the tooltip on mouseout
+      hoverLine.attr("opacity", 0); 
+      gdpTooltip.style("opacity", 0); 
     })
     .on("mousemove", function(event) {
       // Get the x position of the mouse relative to the SVG
@@ -289,7 +351,7 @@ svg2.append("text")
     .attr("y", chartHeight / 1.5)
     .attr("text-anchor", "middle")  
     .style("font-size", "16px")  
-    .text("Inflation CPI");
+    .text("Rising Inflation CPI");
 
 // Load and plot inflation data
 d3.json("http://localhost:8000/JSON_Data/inflation_statistic_id895080_year-on-year-change-in-cpi-in-turkey-2016-2024.json").then(data => {
@@ -299,12 +361,12 @@ d3.json("http://localhost:8000/JSON_Data/inflation_statistic_id895080_year-on-ye
     const filteredInflationData = data.filter(d => d.Month >= startPeriod && d.Month < endPeriod)
                                       .map(d => ({ Date: new Date(d.Month), Percentage: d.Percentage }));
 
-    // Define xScale as a time scale
+    // Defing xScale as a time scale
     const xScaleInflation = d3.scaleTime()
         .domain(d3.extent(filteredInflationData, d => d.Date))
         .range([0, chartWidth]);
 
-    // Define yScale as a linear scale
+    // Defing yScale as a linear scale
     const yScaleInflation = d3.scaleLinear()
         .domain([30, d3.max(filteredInflationData, d => d.Percentage)])
         .range([chartHeight, 0]);
@@ -327,16 +389,16 @@ svg2.append("g")
       })
   );
 
-// Optional: Increase the font size of the x-axis tick labels
-svg2.selectAll(".tick text") // Adjust the class name if necessary
+
+svg2.selectAll(".tick text") 
   .style("font-size", "12px");
 
 
-    // Add Y axis with '%' symbol
+    // Adding Y axis with '%' symbol
     svg2.append("g")
         .call(d3.axisLeft(yScaleInflation).tickFormat(d => `${d}%`));
 
-    // Add the line path
+    // Adding the line path
     svg2.append("path")
         .datum(filteredInflationData)
         .attr("fill", "none")
@@ -347,7 +409,7 @@ svg2.selectAll(".tick text") // Adjust the class name if necessary
             .y(d => yScaleInflation(d.Percentage))
         );
 
-    // Create and append div for the inflation tooltip
+    // Creating and append div for the inflation tooltip
     const inflationTooltip = d3.select("body").append("div")
         .attr("class", "gdpTooltip")
         .style("opacity", 0)
@@ -357,19 +419,19 @@ svg2.selectAll(".tick text") // Adjust the class name if necessary
         .style("padding", "5px");
    
     
-    // Append mouseover event listener for svg2
+    // Appending mouseover event listener for svg2
     svg2.append("rect")
         .attr("class", "overlay")
         .attr("width", chartWidth)
         .attr("height", chartHeight)
-        .style("opacity", 0) // Set to transparent to capture mouse events
+        .style("opacity", 0) 
         .on("mouseover", function() {
-            hoverLine2.attr("opacity", 1); // Show the vertical line on mouseover
-            inflationTooltip.style("opacity", 1); // Show the tooltip on mouseover
+            hoverLine2.attr("opacity", 1); 
+            inflationTooltip.style("opacity", 1); 
         })
         .on("mouseout", function() {
-            hoverLine2.attr("opacity", 0); // Hide the vertical line on mouseout
-            inflationTooltip.style("opacity", 0); // Hide the tooltip on mouseout
+            hoverLine2.attr("opacity", 0);
+            inflationTooltip.style("opacity", 0); 
         })
         .on("mousemove", function(event) {
             // Get the x position of the mouse relative to the SVG
@@ -392,7 +454,7 @@ svg2.selectAll(".tick text") // Adjust the class name if necessary
                 .style("top", `${event.pageY - 10}px`);
         });
 
-    // Add the vertical line for hover effect
+
     const hoverLine2 = svg2.append("line")
         .attr("stroke", "#000")
         .attr("x1", 0)
@@ -422,7 +484,11 @@ svg3.append("text")
     .attr("y", chartHeight / 1.5)
     .attr("text-anchor", "middle")  
     .style("font-size", "16px") 
-    .text("USD to Turkish");
+    .text("Devaluation of Turkish Lira(₺)")
+    .append("tspan")
+    .attr("x", chartWidth / 2)
+    .attr("dy", "1.2em")
+    .text("against USD($)");
 
 // Load and plot exchange rate data
 d3.json("http://localhost:8000/JSON_Data/usd_to_lira_statista.json").then(data => {
@@ -561,3 +627,136 @@ svg3.append("rect")
    });
 });
 
+
+
+//-------------------------------2024 Local Elections Results----------------------------------------------
+
+
+
+
+let svg4;
+let partyColors2 = {
+    'AK': '#ED9600',
+    'CHP': '#E42538',
+    'MHP': '#E6D9B9', // Color for MHP  #
+    'Prosperity Again': '#FFD700', // Color for Prosperity Again
+    'DEM': '#007FFF', // Color for DEM
+    'Other': '#BDC3C7', // Color for Other
+    'Default': '#BDC3C7'
+};
+
+let hoverColors2 = {
+    'AK': '#FFB347', // Brighter version of AK color
+    'CHP': '#FF4742', // Brighter version of CHP color
+    'MHP': '#FAF3E0', // Brighter version of MHP color
+    'Prosperity Again': '#F2E172', // Brighter version of Prosperity Again color
+    'DEM': '#3399FF', // Brighter version of DEM color
+    'Other': '#D3D3D3', // Brighter version of Other color
+    'Default': '#D3D3D3'
+};
+
+let tooltip2 = d3.select("body").append("div")
+    .attr("class", "tooltip")
+    .style("position", "absolute")
+    .style("visibility", "hidden")
+    .style("background-color", "white")
+    .style("border", "1px solid black")
+    .style("padding", "10px")
+    .style("border-radius", "5px");
+
+d3.json("http://localhost:8000/JSON_Data/merged_data_2024.geojson").then(function(data) {
+    svg4 = d3.select("#map2").append("svg")
+        .attr("width", "100%")
+        .attr("height", "100%");
+
+    let width = document.getElementById("map2").clientWidth;
+    let height = document.getElementById("map2").clientHeight;
+
+    let projection = d3.geoMercator()
+        .fitSize([width, height], data);
+
+    let path = d3.geoPath().projection(projection);
+
+    function getWinningParty(properties) {
+        if (!properties) return 'Default';
+    
+        // Check for the specific city of CANAKKALE , error displaying
+        if (properties.name === "Canakkale") {
+            return 'CHP'; // Forcefully set CHP as the winner for CANAKKALE
+        }
+    
+        let maxPercentage = 0;
+        let winningParty = 'Default';
+        let parties = ['AK', 'CHP', 'MHP', 'Prosperity Again', 'DEM', 'Other'];
+    
+        parties.forEach(function(party) {
+            let percentage = properties[party];
+            if (percentage && percentage > maxPercentage) {
+                maxPercentage = percentage;
+                winningParty = party;
+            }
+        });
+        return winningParty;
+    }
+    
+
+    svg4.selectAll(".city-boundary")
+        .data(data.features)
+        .enter().append("path")
+        .attr("class", "city-boundary")
+        .attr("d", path)
+        .attr("data-original-color", function(d) {
+            return partyColors2[getWinningParty(d.properties)];
+        })
+        .style("fill", function(d) {
+            return partyColors2[getWinningParty(d.properties)];
+        })
+        .style("stroke", "#ffffff")
+        .style("stroke-width", "1")
+        .on("mouseover", function(event, d) {
+            let hoverColor = hoverColors2[getWinningParty(d.properties)];
+            d3.select(this).style("fill", hoverColor);
+
+            let properties = d.properties;
+            let parties = ['AK', 'CHP', 'MHP', 'Prosperity Again', 'DEM', 'Other'];
+            parties.sort((a, b) => (properties[b] || 0) - (properties[a] || 0));
+            let content = `<strong>${properties.name}</strong><br/>`;
+            parties.forEach(party => {
+                if (properties[party]) {
+                    content += `${party}: ${(properties[party] * 100).toFixed(2)}%<br/>`;
+                }
+            });
+
+            tooltip2.html(content)
+                .style("visibility", "visible")
+                .style("left", (event.pageX + 5) + "px")
+                .style("top", (event.pageY - 28) + "px");
+
+        })
+        .on("mouseout", function() {
+            let originalColor = d3.select(this).attr("data-original-color");
+            d3.select(this).style("fill", originalColor);
+
+            tooltip2.style("visibility", "hidden");
+        });
+
+    svg4.selectAll(".city-name")
+        .data(data.features)
+        .enter().append("text")
+        .attr("class", "city-name")
+        .attr("x", function(d) {
+            return path.centroid(d)[0];
+        })
+        .attr("y", function(d) {
+            return path.centroid(d)[1];
+        })
+        .text(function(d) {
+            return d.properties.name.substring(0, 3).toUpperCase();
+        })
+        .attr("text-anchor", "middle")
+        .attr("font-size", "10px")
+        .attr("fill", "white");
+
+}).catch(function(error) {
+    console.log("Error loading GeoJSON data:", error);
+});
