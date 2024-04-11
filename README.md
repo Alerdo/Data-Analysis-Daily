@@ -26,6 +26,9 @@ a foreign key, which helped in creating dynamic data visualizations. I really en
 Using a dataset from Kaggle, I conducted a Super-Store data analysis, aiming to adhere to best practices. The process began with an initial data cleanup, followed by a comprehensive **Exploratory Data Analysis** (EDA) to identify patterns, correlations, and anomalies, performed on **Jupyter Notebook**. After saving the cleaned data locally, I moved to **Power BI**, where I performed different **DAX** calculations and **measures** to calculate various KPIs as per the stakeholders' requirements. The project was finalized with the creation of an interactive dashboard.
 
 
+**Challenge_5 Turkish Elections Result Analysis 📊💻📈**
+
+In this project, I began with data collection from Statista and Turkish election sites, followed by cleaning and analysis using **Python** and **Pandas** in Jupyter Notebook. I then merged this data with a **GeoJSON** file for mapping. Using the **D3** library, I created an interactive, color-coded map and several charts, focusing on insightful data presentation and user engagement.
 
 
 
@@ -42,7 +45,8 @@ Throughout these projects, I utilize a range of technologies and tools, such as:
 - Matplotlib
 - Seaborn
 - Sqlalchemy
-- SciPy 
+- SciPy
+- JavaScript(D3)
 
   
 
