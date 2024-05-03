@@ -9,7 +9,8 @@ This project involved cleaning and analyzing retail data using Python (**Pandas,
 and SQL, focusing on inventory management and sales trend analysis. Skills developed include data preprocessing, 
 SQL querying for advanced analysis, and statistical methods like **linear regression** for interpreting sales trends and optimizing inventory.
 
-![Retail Analysis](images/Project1.png "Jupyter Notebook Screenshot")
+<img src="images/Project1.png" alt="Retail Analysis" title="Jupyter Notebook Screenshot" width="300">
+
 
 **Challenge_2 Correlation Python** 🔍📉🔢
 
