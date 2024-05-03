@@ -64,10 +64,11 @@ Throughout these projects, I utilize a range of technologies and tools, such as:
 
 Feel free to reach out for collaboration, feedback, or any inquiries:
 
-- ![LinkedIn Icon](https://alerdo.github.io/icons/linkedin.png) [LinkedIn](https://www.linkedin.com/in/alerdo-ballabani-450a85283/)
-- ![Portfolio Icon](https://alerdo.github.io/icons/portfolio.png) [Portfolio](https://alerdo-ballabani.co.uk/)
-- ![Phone Icon](https://alerdo.github.io/icons/phone.png) Mobile: 07555714402
-- ![Email Icon](https://alerdo.github.io/icons/email.png) [Email](mailto:alerdo23@gmail.com)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/alerdo-ballabani-450a85283/)
+- 🖥️ [Portfolio](https://alerdo-ballabani.co.uk/)
+- 📱 Mobile: 07555714402
+- 📧 [Email](mailto:alerdo23@gmail.com)
+
 
 I'm always eager to connect with fellow data enthusiasts and professionals.
 Feed back would be much appreciated.
