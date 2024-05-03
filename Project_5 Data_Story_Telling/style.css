@@ -27,7 +27,9 @@
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0);
 }
 
-
+.list-container ul {
+font-size: 18px;
+}
 
     #project-header {
       background: #ffffff; /* Red background */
@@ -95,6 +97,7 @@
     align-items: center;
     text-align: left;
     padding-top: 7px;
+    
   }
   
 
@@ -269,8 +272,8 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 10px; /* Spacing between items */
-  margin-bottom: 20px; /* Spacing from the bottom */
+  gap: 10px; 
+  margin-bottom: 20px; 
 }
 
 .legend div {
@@ -282,17 +285,17 @@ img {
 .legend .color-box {
   width: 20px;
   height: 10px;
-  margin-right: 5px; /* Spacing between the color box and the text */
-  border: 1px solid #000; /* Optional border around the color boxes */
+  margin-right: 5px;
+  border: 1px solid #000; 
   border-radius: 10%;
 }
 
 /* Colors for each party */
 #CHP { background-color: #E42538; }
-#MHP { background-color: #E6D9B9; } /* Green, update if a different shade is needed */
+#MHP { background-color: #E6D9B9; } 
 #AK { background-color: #ED9600; }
 #DEM { background-color: #007FFF; }
-#YR { background-color: #808080; } /* Placeholder color, update as needed */
+#YR { background-color: #808080; }
 
 .cities-container {
   display: flex;
@@ -300,40 +303,42 @@ img {
   gap: 16px;
   justify-content: space-around;
   padding: 20px;
+  width: 90%;
+  margin: auto;
 }
 
 .city {
   background: #f8f8f8;
-  border-radius: 10px;
-  padding: 10px 5px 0px;
-  box-shadow:
-    0 10px 20px rgba(0, 0, 0, 0.1), /* larger shadow for depth */
-    0 6px 6px rgba(0, 0, 0, 0.1), /* medium shadow for soft edge */
-    0 0 8px rgba(0, 0, 0, 0.2), /* smaller shadow for crisp edge */
-    0 2px 4px rgba(0, 0, 0, 0.2); /* smallest shadow for detailed edge */
-  width: 30%; /* Adjust based on your design requirements */
+
+  padding: 0px;
+  /* box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.1), 
+    0 6px 6px rgba(0, 0, 0, 0.1), ; */
+  width: 30%;  
   transition: box-shadow 0.3s ease;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .city:hover {
   box-shadow:
-    0 15px 30px rgba(0, 0, 0, 0.15), /* larger shadow for depth when hovered */
-    0 10px 10px rgba(0, 0, 0, 0.1), /* medium shadow for soft edge when hovered */
-    0 0 12px rgba(0, 0, 0, 0.25), /* smaller shadow for crisp edge when hovered */
-    0 4px 6px rgba(0, 0, 0, 0.3); /* smallest shadow for detailed edge when hovered */
+    0 15px 30px rgba(0, 0, 0, 0.15),
+    0 10px 10px rgba(0, 0, 0, 0.1), 
+    0 0 12px rgba(0, 0, 0, 0.25), 
+    0 4px 6px rgba(0, 0, 0, 0.3); 
 }
 
 
 .city h2 {
   color: #333;
-  margin: 0 0 10px 0;
+ padding: 10px;
 }
 
 .candidate-local {
   background-color: #e0e0e0; /* Light gray background */
   color: #000; /* Black text color */
   padding: 10px 15px; /* Add padding for better readability */
-  margin-bottom: 10px; /* Add margin to separate each candidate */
+
   border-radius: 5px; /* Add rounded corners for a nicer appearance */
   position: relative;
   border: 1px solid #ccc; /* Slight border for depth */
@@ -355,6 +360,10 @@ img {
 
 
 
+
+#indicators ul {
+  font-size: 17px;
+}
 
 
 .candidate-local.chp {
@@ -380,6 +389,7 @@ img {
   flex-direction: column;
   align-items: center; */
   margin-bottom: 20px; /* Adjust as needed */
+  font-size: 17px;
   
 }
 .results-container h2 {
@@ -412,11 +422,11 @@ h2 {
 }
 
 .color-box.chp {
-  background-color: rgb(255, 71, 66);
+  background-color: #E42538;
 }
 
 .color-box.akp {
-  background-color: rgb(237, 150, 0);
+  background-color: #ED9600;
 }
 
 
@@ -447,4 +457,12 @@ h2 {
 
 #project-description li {
   margin-bottom: 5px;
+}
+
+
+.full-percentage {
+  min-width: 100%;
+  max-width: 100%;
+  border-top: 1px solid #f0f0f0;
+ 
 }

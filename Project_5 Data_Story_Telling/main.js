@@ -94,7 +94,7 @@ let tooltip = d3.select("body").append("div")
     .style("padding", "10px")
     .style("border-radius", "5px");
 
-d3.json("http://localhost:8000/JSON_Data/merged_data.geojson").then(function(data) {
+d3.json("https://alerdo.github.io/data-story-telling-the-times/JSON_Data/merged_data.geojson").then(function(data) {
     svg = d3.select("#map").append("svg")
         .attr("width", "100%")
         .attr("height", "100%");
@@ -235,7 +235,7 @@ svg1.append("text")
 
 
 // Load and plot GDP per capita data
-d3.json("http://localhost:8000/JSON_Data/gdp-per-capiatstatistic_id263599_gross-domestic-product--gdp--per-capita-in-turkey-2028.json").then(data => {
+d3.json("https://alerdo.github.io/data-story-telling-the-times/JSON_Data/gdp-per-capiatstatistic_id263599_gross-domestic-product--gdp--per-capita-in-turkey-2028.json").then(data => {
   //=data for the years 2021 to 2024
   const filteredData = data.filter(d => d.Year >= 2021 && d.Year <= 2024);
 
@@ -354,7 +354,7 @@ svg2.append("text")
     .text("Rising Inflation CPI");
 
 // Load and plot inflation data
-d3.json("http://localhost:8000/JSON_Data/inflation_statistic_id895080_year-on-year-change-in-cpi-in-turkey-2016-2024.json").then(data => {
+d3.json("https://alerdo.github.io/data-story-telling-the-times/JSON_Data/inflation_statistic_id895080_year-on-year-change-in-cpi-in-turkey-2016-2024.json").then(data => {
     // Convert timestamp to date and filter data from Mar 2023 to Mar 2024
     const startPeriod = new Date("2023-04-01").getTime();
     const endPeriod = new Date("2024-04-01").getTime();
@@ -491,7 +491,7 @@ svg3.append("text")
     .text("against USD($)");
 
 // Load and plot exchange rate data
-d3.json("http://localhost:8000/JSON_Data/usd_to_lira_statista.json").then(data => {
+d3.json("https://alerdo.github.io/data-story-telling-the-times/JSON_Data/usd_to_lira_statista.json").then(data => {
     // Parse dates and filter data from Mar 1, 2023, to Apr 5, 2024
     const startDate = new Date("2023-04-01");
     const endDate = new Date("2024-04-05");
@@ -664,7 +664,7 @@ let tooltip2 = d3.select("body").append("div")
     .style("padding", "10px")
     .style("border-radius", "5px");
 
-d3.json("http://localhost:8000/JSON_Data/merged_data_2024.geojson").then(function(data) {
+d3.json("https://alerdo.github.io/data-story-telling-the-times/JSON_Data/merged_data_2024.geojson").then(function(data) {
     svg4 = d3.select("#map2").append("svg")
         .attr("width", "100%")
         .attr("height", "100%");
