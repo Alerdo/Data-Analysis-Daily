@@ -9,7 +9,11 @@ This project involved cleaning and analyzing retail data using Python (**Pandas,
 and SQL, focusing on inventory management and sales trend analysis. Skills developed include data preprocessing, 
 SQL querying for advanced analysis, and statistical methods like **linear regression** for interpreting sales trends and optimizing inventory.
 
-![Retail Analysis](images/Project1.png "Jupyter Notebook Screenshot")
+<p align="center">
+  <img src="images/Project1.png" alt="Retail Analysis" title="Jupyter Notebook Screenshot" width="600">
+</p>
+
+
 
 **Challenge_2 Correlation Python** 🔍📉🔢
 
@@ -17,7 +21,9 @@ My aim in this project was to learn and practice  correlation. I cleaned missing
 and used **scatterplots** to visualize correlation between numerical data also created a **heatmap** for a correlation
 matrix. I further studied correlation significance by learning how to use the **t-test**, specifically understanding **t-values** and **p-values**.
 
-![Correlation Python](images/Project2.png "Heatmap")
+<p align="center">
+  <img src="images/Project2.png" alt="Correlation Python" title="Heatmap" width="600">
+</p>
 
 **Challenge_3 Road Accidents PowerBI** 📚🗂️🧮 
 
@@ -25,20 +31,26 @@ The aim of this project was to gain practical knowledge of **Power BI**. Part of
 such as replacing faulty values, etc. I also created a **Calendar** Table and connected it to the accident records with 
 a foreign key, which helped in creating dynamic data visualizations. I really enjoyed the whole process of creating calculations through **measures** and using them to create interactive dashboards.
 
-![Road Accidents Dashboard](images/Project3.png "PowerBI Dashboard")
+<p align="center">
+  <img src="images/Project3.png" alt="Road Accidents Dashboard" title="PowerBI Dashboard" width="600">
+</p>
 
 **Challenge_4 Global Sales PowerBI(Sales Performance Dashboard)** 📈🔍📉
 
 Using a dataset from Kaggle, I conducted a Super-Store data analysis, aiming to adhere to best practices. The process began with an initial data cleanup, followed by a comprehensive **Exploratory Data Analysis** (EDA) to identify patterns, correlations, and anomalies, performed on **Jupyter Notebook**. After saving the cleaned data locally, I moved to **Power BI**, where I performed different **DAX** calculations and **measures** to calculate various KPIs as per the stakeholders' requirements. The project was finalized with the creation of an interactive dashboard.
 
-![Global Sales Dashboard](images/Project4.png "PowerBI Dashboard")
+<p align="center">
+  <img src="images/Project4.png" alt="Global Sales Dashboard" title="PowerBI Dashboard" width="600">
+</p>
 
 **Challenge_5 Turkish Elections Result Analysis 📊💻📈**
 [Turkish Elections Result Analysis](https://alerdo.github.io/data-story-telling-the-times/)
 
 In this project, I began with data collection from Statista and Turkish election sites, followed by cleaning and analysis using **Python** and **Pandas** in Jupyter Notebook. I then merged this data with a **GeoJSON** file for mapping. Using the **D3** library, I created an interactive, color-coded map and several charts, focusing on insightful data presentation and user engagement.
 
-![Turkish Elections Analysis](images/Project5.png "GeoJSON Map")
+<p align="center">
+  <img src="images/Project5.png" alt="Turkish Elections Analysis" title="GeoJSON Map" width="600">
+</p>
 
 
 
@@ -71,5 +83,4 @@ Feel free to reach out for collaboration, feedback, or any inquiries:
 
 
 I'm always eager to connect with fellow data enthusiasts and professionals.
-Feed back would be much appreciated.
-
+Feedback would be much appreciated.
