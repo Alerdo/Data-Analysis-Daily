@@ -1,0 +1,16 @@
+Project Objective
+*****************
+
+Understand the differences in voting patterns between the 2023 Turkish presidential elections and the 2024 local elections. Analyze factors that led to Erdogan's contrasting outcomes in these elections.
+
+Stakeholders Requstes:
+- How did voting patterns change between the two elections?
+- Were there specific regions where the shift in support was more pronounced?
+- Factors that led to the result
+
+Technology Stack:
+
+- JavaScript(D3.js), HTML 
+- GIT 
+- JupyterNotebook
+- Python(Pandas & Numpy for data cleansing & analysis) 
